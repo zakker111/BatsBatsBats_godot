@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/04b_11/04B_11__.TTF" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_size = 3
+outline_color = Color( 0.333333, 0.137255, 0.137255, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 3
+outline_color = Color( 0.333333, 0.137255, 0.137255, 1 )
+font_data = ExtResource( 1 )
+
+[node name="LevelGui" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 166.0
+margin_top = 1.0
+margin_right = 377.0
+margin_bottom = 89.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.160156, 0.0462952, 0.0462952, 1 )
+text = "0"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_top = 36.0
+margin_right = 200.0
+margin_bottom = 93.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.160784, 0.0470588, 0.0470588, 1 )
+text = "Killed"
